@@ -19,7 +19,7 @@ $(document).ready(function () {
         }
     });
 
-    $("label[for='nvbr-chckbx']").click(function (e) {
+    $("label[for='nvbr-chckbx']").on("click touchstart", function (e) {
         if (isAnimating) {
             e.preventDefault();
         }
