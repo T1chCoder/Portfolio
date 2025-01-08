@@ -15,12 +15,14 @@ $(document).ready(function () {
         isAnimating = true;
 
         if ($("#nvbr-chckbx").prop("checked")) {
+            $("label[for='nvbr-chckbx']").addClass("opnd");
             $("#nvbr").removeClass("anmt");
             updateNavHeight();
             setTimeout(function () {
                 isAnimating = false;
             }, 350);
         } else {
+            $("label[for='nvbr-chckbx']").removeClass("opnd");
             $("#nvbr").addClass("anmt");
             setTimeout(function () {
                 $("nav").removeAttr("style");
