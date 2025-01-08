@@ -1,6 +1,14 @@
 $(document).ready(function () {
     var isAnimating = false;
 
+    function updateNavHeight() {
+        if ($("#nvbr-chckbx").prop("checked")) {
+            $("nav").css("height", $(window).height() - $("header").height()).css("background-color", "var(--bg-clr-5)");
+        } else {
+            $("nav").removeAttr("style");
+        }
+    }
+
     function handleAnimation() {
         if (isAnimating) return;
 
@@ -8,12 +16,14 @@ $(document).ready(function () {
 
         if ($("#nvbr-chckbx").prop("checked")) {
             $("#nvbr").removeClass("anmt");
+            updateNavHeight();
             setTimeout(function () {
                 isAnimating = false;
             }, 350);
         } else {
             $("#nvbr").addClass("anmt");
             setTimeout(function () {
+                $("nav").removeAttr("style");
                 isAnimating = false;
             }, 350);
         }
@@ -28,6 +38,16 @@ $(document).ready(function () {
             var checkbox = $("#nvbr-chckbx");
             checkbox.prop("checked", !checkbox.prop("checked"));
             handleAnimation();
+        }
+    });
+
+    $(window).resize(function () {
+        updateNavHeight();
+    });
+
+    $("html").click(function() {
+        if ($("#nvbr-chckbx").prop("checked")) {
+            $("#nvbr-chckbx").click();
         }
     });
 });
