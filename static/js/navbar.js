@@ -1,12 +1,12 @@
 $(document).ready(function () {
     var isAnimating = false;
 
-    $("#nvbr-chckbx").change(function () {
+    function handleAnimation() {
         if (isAnimating) return;
 
         isAnimating = true;
 
-        if (this.checked) {
+        if ($("#nvbr-chckbx").prop("checked")) {
             $("#nvbr").removeClass("anmt");
             setTimeout(function () {
                 isAnimating = false;
@@ -17,11 +17,17 @@ $(document).ready(function () {
                 isAnimating = false;
             }, 350);
         }
-    });
+    }
+
+    $("#nvbr-chckbx").change(handleAnimation);
 
     $("label[for='nvbr-chckbx']").on("click touchstart", function (e) {
         if (isAnimating) {
             e.preventDefault();
+        } else {
+            var checkbox = $("#nvbr-chckbx");
+            checkbox.prop("checked", !checkbox.prop("checked"));
+            handleAnimation();
         }
     });
 });
