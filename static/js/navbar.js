@@ -1,13 +1,27 @@
 $(document).ready(function () {
+    var isAnimating = false;
+
     $("#nvbr-chckbx").change(function () {
-        if (this.checked && $("#nvbr").hasClass("anmt")) {
+        if (isAnimating) return;
+
+        isAnimating = true;
+
+        if (this.checked) {
             $("#nvbr").removeClass("anmt");
-        }
-        else if (!this.checked && !$("#nvbr").hasClass("anmt")) {
+            setTimeout(function () {
+                isAnimating = false;
+            }, 350);
+        } else {
             $("#nvbr").addClass("anmt");
             setTimeout(function () {
-                $("#nvbr").removeClass("anmt");
+                isAnimating = false;
             }, 350);
+        }
+    });
+
+    $("label[for='nvbr-chckbx']").click(function (e) {
+        if (isAnimating) {
+            e.preventDefault();
         }
     });
 });
