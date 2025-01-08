@@ -1,6 +1,8 @@
 header {
+    background-color: var(--bg-clr-1);
     padding-top: 25px;
     padding-bottom: 25px;
+    z-index: 99999;
 }
 
 header > .lft > .btn-bg > .btn > .txt {
@@ -12,7 +14,7 @@ header > .lft > .btn-bg > .btn {
     margin-left: -6px;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 767px) {
     header > .rght > .btns {
         display: none;
     }
@@ -30,8 +32,8 @@ header > .rght > .btns > .btn-bg:last-child {
     margin-right: -20px;
 }
 
-@media only screen and (min-width: 750px) {
-    header > #nvbr-bg {
+@media only screen and (min-width: 767px) {
+    .hdr-bg > nav {
         display: none;
     }
 
@@ -42,24 +44,74 @@ header > .rght > .btns > .btn-bg:last-child {
 
 header > .rght > .nvbr > .btn-bg > .btn {
     padding: 7px;
+    margin-right: -7px;
 }
 
-header > #nvbr-bg {
+.hdr-bg > nav {
     top: 100%;
 }
 
-header > #nvbr-bg > #nvbr {
+.hdr-bg > nav > #nvbr {
     background-color: var(--bg-clr-2);
+    visibility: hidden;
+    overflow: hidden;
+    max-height: 0;
+    transform: translateY(-100%);
+    transition: all .35s ease;
 }
 
 #nvbr-chckbx:checked + #nvbr {
-    display: block !important;
+    visibility: visible;
+    transform: translateY(0);
+    overflow: auto;
+    max-height: fit-content;
+    animation: nvbr-opn .35s ease;
 }
 
-header > #nvbr-bg > #nvbr > .btns > .btn-bg > .btn {
+#nvbr-chckbx:not(:checked) + #nvbr.anmt {
+    animation: nvbr-cls .35s ease;
+}
+
+@keyframes nvbr-opn {
+    0% {
+        visibility: visible;
+        overflow: auto;
+        max-height: fit-content;
+        transform: translateY(-100%);
+    }
+    100% {
+        visibility: visible;
+        overflow: auto;
+        max-height: fit-content;
+        transform: translateY(0);
+    }
+}
+
+@keyframes nvbr-cls {
+    0% {
+        visibility: visible;
+        overflow: auto;
+        max-height: fit-content;
+        transform: translateY(0);
+    }
+    99% {
+        visibility: visible;
+        overflow: auto;
+        max-height: fit-content;
+        transform: translateY(-100%);
+    }
+    100% {
+        visibility: hidden;
+        overflow: hidden;
+        max-height: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.hdr-bg > nav > #nvbr > .btns > .btn-bg > .btn {
     padding: 20px;
 }
 
-header > #nvbr-bg > #nvbr > .btns > .btn-bg > .btn > .txt {
+.hdr-bg > nav > #nvbr > .btns > .btn-bg > .btn > .txt {
     color: var(--txt-clr-2);
 }

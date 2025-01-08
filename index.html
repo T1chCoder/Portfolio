@@ -30,6 +30,9 @@
     <!-- CSS Files -->
     <link rel="stylesheet" href="./static/css/attribute.css" />
     <link rel="stylesheet" href="./static/css/variable.css" />
+    <link rel="stylesheet" href="./static/css/border-radius.css">
+    <link rel="stylesheet" href="./static/css/hover.css">
+    <link rel="stylesheet" href="./static/css/active.css">
     <link rel="stylesheet" href="./static/css/text.css" />
     <link rel="stylesheet" href="./static/css/style.css" />
     <link rel="stylesheet" href="./static/css/header.css" />
@@ -38,6 +41,25 @@
     <!-- JS Files -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./static/js/main.js"></script>
+    <script src="./static/js/navbar.js"></script>
+    <script>
+        if ('ontouchstart' in document.documentElement) {
+            try {
+                for (var si in document.styleSheets) {
+                    var styleSheet = document.styleSheets[si];
+                    if (!styleSheet.rules) continue;
+    
+                    for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+                        if (!styleSheet.rules[ri].selectorText) continue;
+    
+                        if (styleSheet.rules[ri].selectorText.match(':hover')) {
+                            styleSheet.deleteRule(ri);
+                        }
+                    }
+                }
+            } catch (ex) {}
+        }
+    </script>
 
     <!-- Font Files -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,49 +67,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body class="ptn-rltv">
-    <header class="ptn-stck tp-cvr lft-cvr flx-spc-btwn wrp">
-        <div class="lft flx-cntr">
-            <div class="btn-bg flx-cntr">
-                <a href="/" class="btn flx-cntr">
-                    <h2 class="txt">Portfolio</h2>
-                </a>
-            </div>
-        </div>
-        <div class="rght flx-cntr">
-            <div class="btns flx-cntr">
+    <div class="hdr-bg ptn-stck tp-cvr lft-cvr wdth-cvr flx-cntr">
+        <header class="wdth-cvr flx-spc-btwn wrp">
+            <div class="lft flx-cntr">
                 <div class="btn-bg flx-cntr">
-                    <a href="#about" class="btn hvr-1 actv-1 bdr-rds-1 flx-cntr">
-                        <h4 class="txt">About</h4>
-                    </a>
-                </div>
-                <div class="btn-bg flx-cntr">
-                    <a href="#about" class="btn hvr-1 actv-1 bdr-rds-1 flx-cntr">
-                        <h4 class="txt">Projects</h4>
-                    </a>
-                </div>
-                <div class="btn-bg flx-cntr">
-                    <a href="#about" class="btn hvr-1 actv-1 bdr-rds-1 flx-cntr">
-                        <h4 class="txt">Contact</h4>
+                    <a href="/" class="btn flx-cntr">
+                        <h2 class="txt">Portfolio</h2>
                     </a>
                 </div>
             </div>
-            <div class="nvbr flx-cntr">
-                <div class="btn-bg flx-cntr">
-                    <label for="nvbr-chckbx" class="btn hvr-1 actv-1 bdr-rds-cvr flx-cntr" id="nvbr-btn">
-                        <span style="--fgr-sz: 46px;" class="icn fgr">
-                            <svg width="46" height="46" viewBox="0 0 46 46" fill="var(--txt-clr-1)" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.58329 13.4167H36.4166C37.5666 13.4167 38.3333 12.65 38.3333 11.5C38.3333 10.35 37.5666 9.58337 36.4166 9.58337H9.58329C8.43329 9.58337 7.66663 10.35 7.66663 11.5C7.66663 12.65 8.43329 13.4167 9.58329 13.4167Z" />
-                                <path d="M9.58329 24.9167H36.4166C37.5666 24.9167 38.3333 24.15 38.3333 23C38.3333 21.85 37.5666 21.0834 36.4166 21.0834H9.58329C8.43329 21.0834 7.66663 21.85 7.66663 23C7.66663 24.15 8.43329 24.9167 9.58329 24.9167Z" />
-                                <path d="M9.58329 36.4167H36.4166C37.5666 36.4167 38.3333 35.65 38.3333 34.5C38.3333 33.35 37.5666 32.5834 36.4166 32.5834H9.58329C8.43329 32.5834 7.66663 33.35 7.66663 34.5C7.66663 35.65 8.43329 36.4167 9.58329 36.4167Z" />
-                            </svg>                                
-                        </span>
-                    </label>
+            <div class="rght flx-cntr">
+                <div class="btns flx-cntr">
+                    <div class="btn-bg flx-cntr">
+                        <a href="#about" class="btn hvr-1 actv-1 bdr-rds-1 flx-cntr">
+                            <h4 class="txt">About</h4>
+                        </a>
+                    </div>
+                    <div class="btn-bg flx-cntr">
+                        <a href="#about" class="btn hvr-1 actv-1 bdr-rds-1 flx-cntr">
+                            <h4 class="txt">Projects</h4>
+                        </a>
+                    </div>
+                    <div class="btn-bg flx-cntr">
+                        <a href="#about" class="btn hvr-1 actv-1 bdr-rds-1 flx-cntr">
+                            <h4 class="txt">Contact</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="nvbr flx-cntr">
+                    <div class="btn-bg flx-cntr">
+                        <label for="nvbr-chckbx" onclick="" class="btn hvr-1 actv-1 bdr-rds-cvr flx-cntr" id="nvbr-btn">
+                            <span style="--fgr-sz: 38px;" class="icn fgr">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="var(--txt-clr-1)" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.91659 11.0834H30.0833C31.0333 11.0834 31.6666 10.4501 31.6666 9.50008C31.6666 8.55008 31.0333 7.91675 30.0833 7.91675H7.91659C6.96659 7.91675 6.33325 8.55008 6.33325 9.50008C6.33325 10.4501 6.96659 11.0834 7.91659 11.0834Z" />
+                                    <path d="M7.91659 20.5834H30.0833C31.0333 20.5834 31.6666 19.9501 31.6666 19.0001C31.6666 18.0501 31.0333 17.4167 30.0833 17.4167H7.91659C6.96659 17.4167 6.33325 18.0501 6.33325 19.0001C6.33325 19.9501 6.96659 20.5834 7.91659 20.5834Z" />
+                                    <path d="M7.91659 30.0834H30.0833C31.0333 30.0834 31.6666 29.4501 31.6666 28.5001C31.6666 27.5501 31.0333 26.9167 30.0833 26.9167H7.91659C6.96659 26.9167 6.33325 27.5501 6.33325 28.5001C6.33325 29.4501 6.96659 30.0834 7.91659 30.0834Z" />
+                                </svg>                                                            
+                            </span>
+                        </label>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="wdth-cvr ptn-abslt lft-cvr flx-cntr" id="nvbr-bg">
+        </header>
+        <nav class="wdth-cvr ptn-abslt lft-cvr flx-cntr">
             <input type="checkbox" class="nn" id="nvbr-chckbx">
-            <div class="wdth-cvr flx-cntr nn" id="nvbr">
+            <div class="wdth-cvr flx-cntr flx-tp" id="nvbr">
                 <div class="btns flx-drt-clmn wdth-cvr">
                     <div class="btn-bg flx-cntr">
                         <a href="#about" class="btn hvr-2 actv-2 wdth-cvr flx-cntr flx-lft bdr-bx">
@@ -106,8 +130,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </nav>
+    </div>
     <main></main>
     <footer></footer>
 </body>

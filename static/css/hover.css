@@ -1,0 +1,7 @@
+.hvr-1:hover {
+    background-color: var(--bg-clr-3);
+}
+
+.hvr-2:hover {
+    background-color: rgba(0, 0, 0, .1);
+}

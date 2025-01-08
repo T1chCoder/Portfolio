@@ -26,7 +26,7 @@
 /* Body */
 html {
     background-color: var(--bg-clr-1);
-    min-width: 460px;
+    min-width: 320px;
 }
 
 a, button, label {
