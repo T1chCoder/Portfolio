@@ -1,0 +1,55 @@
+footer {
+    background-color: var(--bg-clr-1);
+}
+
+footer > hr {
+    height: 1px;
+    background-color: var(--bg-clr-6);
+}
+
+footer > .tp {
+    gap: 58px;
+    padding: 48px 0 56px 0;
+}
+
+footer > .btm {
+    padding: 36px 0;
+}
+
+footer > .tp > .lft-bg > .lft,
+footer > .tp > .rght-bg > .rght {
+    gap: 24px;
+}
+
+footer > .tp > .lft-bg .lft > .hdr > .txt,
+footer > .tp > .rght-bg > .rght > .hdr > .txt {
+    font-weight: 600;
+}
+
+footer > .tp > .rght-bg > .rght > .cntnt > .btns {
+    padding: 6px 0;
+    gap: 14px;
+}
+
+footer > .tp > .rght-bg > .rght > .cntnt > .btns > .btn-bg > .btn {
+    padding: 8px;
+    background-color: var(--txt-clr-1);
+}
+
+footer > .tp > .lft-bg > .lft > .cntnt > .txt,
+footer > .tp > .rght-bg > .rght > .cntnt > .txt,
+footer > .btm > .txt {
+    line-height: 1.55;
+    color: var(--txt-clr-6);
+}
+
+footer > .btm > .txt {
+    color: var(--txt-clr-5);
+}
+
+@media only screen and (max-width: 767px) {
+    footer > .tp {
+        justify-content: flex-start !important;
+        flex-direction: column-reverse !important;
+    }
+}
