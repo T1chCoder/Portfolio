@@ -1,0 +1,65 @@
+header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+header > .lft > .btn-bg > .btn > .txt {
+    font-weight: 600;
+}
+
+header > .lft > .btn-bg > .btn {
+    padding: 4.8px 6px;
+    margin-left: -6px;
+}
+
+@media only screen and (max-width: 750px) {
+    header > .rght > .btns {
+        display: none;
+    }
+}
+
+header > .rght > .btns {
+    gap: 40px;
+}
+
+header > .rght > .btns > .btn-bg > .btn {
+    padding: 20px;
+}
+
+header > .rght > .btns > .btn-bg:last-child {
+    margin-right: -20px;
+}
+
+@media only screen and (min-width: 750px) {
+    header > #nvbr-bg {
+        display: none;
+    }
+
+    header > .rght > .nvbr {
+        display: none;
+    }
+}
+
+header > .rght > .nvbr > .btn-bg > .btn {
+    padding: 7px;
+}
+
+header > #nvbr-bg {
+    top: 100%;
+}
+
+header > #nvbr-bg > #nvbr {
+    background-color: var(--bg-clr-2);
+}
+
+#nvbr-chckbx:checked + #nvbr {
+    display: block !important;
+}
+
+header > #nvbr-bg > #nvbr > .btns > .btn-bg > .btn {
+    padding: 20px;
+}
+
+header > #nvbr-bg > #nvbr > .btns > .btn-bg > .btn > .txt {
+    color: var(--txt-clr-2);
+}

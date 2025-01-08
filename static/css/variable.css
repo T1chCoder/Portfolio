@@ -1,9 +1,13 @@
 /* Background Colors */
 html {
-    --bg-clr-1: #000000;
+    --bg-clr-1: #1A1B1D;
+    --bg-clr-2: #E7EAEB;
+    --bg-clr-3: rgba(250, 250, 250, .1);
+    --bg-clr-4: rgba(250, 250, 250, .2);
 }
 
 /* Text Colors */
 html {
-    --txt-clr-1: #FFFFFF;
+    --txt-clr-1: #F3F5F5;
+    --txt-clr-2: #000000;
 }
