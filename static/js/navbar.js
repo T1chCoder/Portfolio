@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     function updateNavHeight() {
         if ($("#nvbr-chckbx").prop("checked")) {
-            $("nav").css("height", $(window).height() - $("header").height()).css("background-color", "var(--bg-clr-5)");
+            $("nav").css("height", $("body").height() - $("header").height()).css("background-color", "var(--bg-clr-5)");
         } else {
             $("nav").removeAttr("style");
         }

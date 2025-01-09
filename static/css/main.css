@@ -1,0 +1,152 @@
+main {
+    background-color: var(--bg-clr-2);
+}
+
+main * {
+    color: var(--txt-clr-2);
+}
+
+main > .sct-bg > .sct {
+    padding-top: 32px;
+    scroll-margin-top: 111.59px;
+}
+
+main > .sct-bg > .sct > .hdr-bg > .hdr {
+    padding: 18px 0;
+}
+
+main > .sct-bg > .sct > .hdr-bg > .hdr > .txt {
+    font-weight: 600;
+}
+
+main > .sct-bg > .sct > .inf-bg > .inf {
+    padding: 6px 0;
+}
+
+main > .sct-bg > .sct > .hdr-bg > .hdr > .txt,
+main > .sct-bg > .sct > .inf-bg > .inf > .txt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .cntnt-bg > .cntnt > .dtl-bg > .dtl > .cntnt-bg > .cntnt > .dtl > .txt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .cntnt-bg > .cntnt > .dtl-bg > .dtl > .hdr-bg > .hdr > .txt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr > .cntnt-bg > .cntnt > .tlt > .txt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr > .cntnt-bg > .cntnt > .inf > .txt {
+    line-height: 1.55;
+    text-align: center;
+}
+
+main > .sct-bg > .sct > .inf-bg > .inf > .txt {
+    color: var(--txt-clr-4);
+}
+
+@media only screen and (min-width: 1200px) {
+    main > .sct-bg > .sct > .inf-bg > .inf {
+        padding-left: 61px;
+        padding-right: 61px;
+    }   
+}
+
+@media only screen and (max-width: 1199px) {
+    main > .sct-bg > .sct > .inf-bg > .inf {
+        padding-left: 30px;
+        padding-right: 30px;
+    }   
+}
+
+@media only screen and (max-width: 767px) {
+    main > .sct-bg > .sct > .inf-bg > .inf {
+        padding-left: 15px;
+        padding-right: 15px;
+    }   
+}
+
+@media only screen and (max-width: 575px) {
+    main > .sct-bg > .sct > .inf-bg > .inf {
+        padding-left: 10px;
+        padding-right: 10px;
+    }   
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt {
+    padding: 34px 0 12px 0;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl {
+    border-radius: 18px;
+    align-items: stretch !important;
+    background-color: white;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn {
+    padding: 44px 24px 50px 24px;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr {
+    padding: 8px 0;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr .icn {
+    background-color: var(--bg-clr-2);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr > .cntnt-bg > .cntnt > .tlt {
+    padding: 20px 0 2px 0;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr > .cntnt-bg > .cntnt > .tlt > .txt {
+    font-weight: 600;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr > .cntnt-bg > .cntnt > .inf {
+    padding: 10px 0;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr > .cntnt-bg > .cntnt > .inf > .txt {
+    color: var(--txt-clr-4);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .cntnt-bg > .cntnt {
+    gap: 18px;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .cntnt-bg > .cntnt > .dtl-bg > .dtl > .hdr-bg > .hdr {
+    padding: 6px;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .cntnt-bg > .cntnt > .dtl-bg > .dtl > .hdr-bg > .hdr > .txt {
+    font-weight: 600;
+    color: var(--txt-clr-7);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .cntnt-bg > .cntnt > .dtl-bg > .dtl > .cntnt-bg > .cntnt > .dtl {
+    padding: 3px 0;
+}
+
+@media only screen and (max-width: 767px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg {
+        width: 100%;
+    }
+    
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg {
+        flex-direction: column;
+    }
+
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg:not(:last-child)::after {
+        content: "";
+        width: 85%;
+        height: 1px;
+        background-color: var(--bg-clr-8);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg {
+        flex: 1;
+    }
+
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg:not(:last-child)::after {
+        content: "";
+        width: 1px;
+        height: 89%;
+        background-color: var(--bg-clr-8);
+    }
+}

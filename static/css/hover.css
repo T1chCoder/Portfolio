@@ -3,5 +3,21 @@
 }
 
 .hvr-2:hover {
-    background-color: rgba(0, 0, 0, .1);
+    background-color: var(--bg-clr-7);
+}
+
+.hvr-3 {
+    position: relative;
+}
+
+
+.hvr-3:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--bg-clr-7);
 }

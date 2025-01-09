@@ -27,6 +27,7 @@
 html {
     background-color: var(--bg-clr-1);
     min-width: 320px;
+    scroll-behavior: smooth;
 }
 
 a, button, label {

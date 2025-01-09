@@ -1,4 +1,5 @@
-.hdr-bg {
+body > .hdr-bg {
+    transition: top 0.5s ease, box-shadow 0.5s ease;
     z-index: 99999;
 }
 
