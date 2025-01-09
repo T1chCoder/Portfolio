@@ -6,12 +6,14 @@
     background-color: var(--bg-clr-7);
 }
 
-.hvr-3 {
+.hvr-3,
+.hvr-4 {
     position: relative;
 }
 
 
-.hvr-3:hover::before {
+.hvr-3:hover::before,
+.hvr-4:hover::before {
     content: "";
     position: absolute;
     top: 0;
@@ -19,5 +21,12 @@
     width: 100%;
     height: 100%;
     z-index: -1;
+}
+
+.hvr-3:hover::before {
     background-color: var(--bg-clr-7);
+}
+
+.hvr-4:hover::before {
+    background-color: var(--bg-clr-3);
 }

@@ -185,6 +185,7 @@ main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd {
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .inpt,
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .txt-inpt-bg {
     background-color: var(--bg-clr-10);
+    transition: background-color .25s ease-in-out;
 }
 
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn,
@@ -205,7 +206,8 @@ main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .
 
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn > .txt,
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .inpt,
-main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .txt-inpt-bg > .txt-inpt {
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .txt-inpt-bg > .txt-inpt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm::before {
     line-height: 1.3;
 }
 @media only screen and (min-width: 1200px) {
@@ -239,20 +241,180 @@ main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .
 
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.alrt::after {
     content: "";
-    position: absolute;
     bottom: 0;
+    position: absolute;
     left: 0;
     width: 100%;
-    height: 2px;
-    background-color: var(--bg-clr-12);
+    height: 3px;
     z-index: 2;
+    transform: scale(1);
+    animation: frm-aftr-anmtn 0.3s ease;
 }
 
-main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.alrt {
+@keyframes frm-aftr-anmtn {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.alrt::after {
+    background-color: var(--bg-clr-12) !important;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.alrt > .inpt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.alrt > .txt-inpt-bg {
     border-bottom-right-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
 }
 
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm {
     transition: border-radius 0.4s ease-in-out;
+    z-index: unset;
+    cursor: text;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn.ld .bd-bg,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn.scs .bd-bg {
+    display: flex !important;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn.ld > .txt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn.scs > .txt {
+    visibility: hidden;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .inpt::placeholder,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .txt-inpt-bg > .txt-inpt::placeholder {
+    visibility: hidden;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm::before {
+    content: attr(placeholder);
+    position: absolute;
+    z-index: 4;
+    left: 14.5px;
+    top: 32.5%;
+    transition: font-size .25s ease, top .25s ease, color .15s ease;
+    color: var(--txt-clr-8);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm:has(.txt-inpt)::before {
+    top: 11.05%;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd > .inpt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd > .txt-inpt-bg {
+    background-color: var(--bg-clr-13) !important;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg:has(.frm.fcsd)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--bg-clr-6);
+    border-radius: 8px;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg:has(.frm.fcsd):after {
+    content: attr(placeholder);
+    height: 1px;
+    position: absolute;
+    top: 0;
+    left: 11.68px;
+    background-color: var(--bg-clr-13);
+    z-index: 3;
+    user-select: none;
+    overflow: hidden;
+    padding: 0 0.5px;
+    box-sizing: border-box;
+    font-weight: 700;
+    transform: scale(1);
+    animation: frm-aftr-anmtn 0.15s ease, bg-clr-chng-anmtn 0.25s ease-in-out;
+}
+
+@keyframes bg-clr-chng-anmtn {
+    from {
+        background-color: var(--bg-clr-10);
+    }
+    to {
+        background-color: var(--bg-clr-13);
+    }
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd::before,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.actv::before {
+    left: 12px;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 992px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.actv::before {
+        top: -8px;
+    }    
+}
+
+@media only screen and (max-width: 991px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.actv::before {
+        top: -7px;
+    }    
+}
+
+@media only screen and (min-width: 1200px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.actv::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg:has(.frm.fcsd):after {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.actv::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg:has(.frm.fcsd):after {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.actv::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg:has(.frm.fcsd):after {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.actv::before,
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg:has(.frm.fcsd):after {
+        font-size: 10px;
+    }
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.actv::before {
+    color: var(--txt-clr-2);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.fcsd::before {
+    color: var(--txt-clr-7) !important;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg:has(.frm.actv):after {
+    animation: none !important;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg:has(.frm.alrt)::before {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-width: 0;
 }

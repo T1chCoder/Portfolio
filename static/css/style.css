@@ -21,6 +21,9 @@
     z-index: 1;
     list-style-type: none;
     caret-color: var(--bg-clr-6);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 *::selection {

@@ -108,6 +108,10 @@
     overflow: scroll;
 }
 
+.hdn {
+    visibility: hidden;
+}
+
 .ovrfl-vsbl {
     overflow: visible;
 }

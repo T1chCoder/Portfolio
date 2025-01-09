@@ -45,6 +45,7 @@
     <script src="./static/js/navbar.js"></script>
     <script src="./static/js/scroll.js"></script>
     <script src="./static/js/contact.js"></script>
+    <script src="./static/js/focus.js"></script>
     <script>
         if ('ontouchstart' in document.documentElement) {
             try {
@@ -168,7 +169,7 @@
                                                                 <span class="txt">Frontend</span>
                                                             </div>
                                                             <div class="inf wdth-cvr flx-cntr">
-                                                                <h6 class="txt">I value simple content structure, clean design patterns, and thoughtful interactions</h6>
+                                                                <h6 class="txt">Designing with clarity, crafting seamless interactions, and creating elegant user experiences</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -258,7 +259,7 @@
                                                                 <span class="txt">Backend</span>
                                                             </div>
                                                             <div class="inf wdth-cvr flx-cntr">
-                                                                <h6 class="txt">I like to code things from scratch, and enjoy bringing ideas to life in the browser</h6>
+                                                                <h6 class="txt">Building efficient systems, optimizing performance, and ensuring seamless data flow for robust applications</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -338,7 +339,7 @@
                                                                 <span class="txt">Dev Kit</span>
                                                             </div>
                                                             <div class="inf wdth-cvr flx-cntr">
-                                                                <h6 class="txt">I genuinely care about people, and enjoy helping them work on their craft</h6>
+                                                                <h6 class="txt">Crafting seamless experiences and efficient workflows with the right tools for every challenge</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -414,49 +415,81 @@
                             <h5 class="txt">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</h5>
                         </div>
                     </div>
+                    <script>
+                        $(document).ready(function() {
+                            $("main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm").each(function() {
+                                var placeholderText = $(this).find("input").attr("placeholder");
+                                
+                                if (!placeholderText) {
+                                    var placeholderText = $(this).find("textarea").attr("placeholder");
+                                
+                                }
+                                
+                                $(this).attr("placeholder", placeholderText)
+                            });
+
+                            $("main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg").each(function() {
+                                var placeholderText = $(this).find("input").attr("placeholder");
+                                
+                                if (!placeholderText) {
+                                    var placeholderText = $(this).find("textarea").attr("placeholder");
+                                
+                                }
+                                
+                                $(this).attr("placeholder", placeholderText)
+                            });
+                        });
+                    </script>
                     <div class="cntnt-bg wdth-cvr flx-cntr">
                         <div class="cntnt wdth-cvr flx-cntr">
                             <div class="bd-bg wdth-cvr flx-cntr">
                                 <div class="bd wdth-cvr flx-drt-clmn">
                                     <div class="clmn-bg wdth-cvr flx-cntr">
                                         <div class="clmn wdth-cvr flx-cntr">
-                                            <div class="frm-bg flx-cvr flx-cntr">
-                                                <div class="frm ptn-rltv wdth-cvr flx-cntr">
+                                            <div class="frm-bg ptn-rltv flx-cvr flx-cntr">
+                                                <label for="cntct-nm" class="frm ptn-rltv wdth-cvr flx-cntr">
                                                     <input type="type" placeholder="Name" class="inpt wdth-cvr" id="cntct-nm">
-                                                </div>
+                                                </label>
                                             </div>
-                                            <div class="frm-bg flx-cvr flx-cntr">
-                                                <div class="frm ptn-rltv wdth-cvr flx-cntr">
+                                            <div class="frm-bg ptn-rltv flx-cvr flx-cntr">
+                                                <label for="cntct-srnm" class="frm ptn-rltv wdth-cvr flx-cntr">
                                                     <input type="type" placeholder="Surname" class="inpt wdth-cvr" id="cntct-srnm">
-                                                </div>
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="clmn-bg wdth-cvr flx-cntr">
                                         <div class="clmn wdth-cvr flx-cntr">
-                                            <div class="frm-bg flx-cvr flx-cntr">
-                                                <div class="frm ptn-rltv wdth-cvr flx-cntr">
+                                            <div class="frm-bg ptn-rltv flx-cvr flx-cntr">
+                                                <label for="cntct-eml" class="frm ptn-rltv wdth-cvr flx-cntr">
                                                     <input type="type" placeholder="Email" class="inpt wdth-cvr" id="cntct-eml">
-                                                </div>
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="clmn-bg wdth-cvr flx-cntr">
                                         <div class="clmn wdth-cvr flx-cntr">
-                                            <div class="frm-bg flx-cvr flx-cntr">
-                                                <div class="frm ptn-rltv wdth-cvr flx-cntr">
+                                            <div class="frm-bg ptn-rltv flx-cvr flx-cntr">
+                                                <label for="cntct-msg" class="frm ptn-rltv wdth-cvr flx-cntr">
                                                     <div class="txt-inpt-bg wdth-cvr flx-cntr">
                                                         <textarea placeholder="Message" class="txt-inpt wdth-cvr" id="cntct-msg"></textarea>
                                                     </div>
-                                                </div>
+                                                </label>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="clmn-bg wdth-cvr flx-cntr">
                                         <div class="clmn wdth-cvr flx-cntr">
                                             <div class="btn-bg wdth-cvr flx-cntr">
-                                                <button type="button" class="btn hvr-3 wdth-cvr flx-cntr" id="cntct-btn">
+                                                <button type="button" class="btn ptn-rltv hvr-4 actv-3 wdth-cvr flx-cntr" id="cntct-btn">
                                                     <h5 class="txt">Send</h5>
+                                                    <div class="bd-bg ptn-abslt tp-cvr lft-cvr cvr flx-cntr nn">
+                                                        <div class="bd flx-cntr cvr">
+                                                            <div style="--fgr-sz: 26px;" class="icn fgr">                                                                                                                                                                                                                                   
+                                                                <span class="cvr"></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </button>
                                             </div>
                                         </div>
