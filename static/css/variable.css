@@ -8,6 +8,10 @@ html {
     --bg-clr-6: #E77527;
     --bg-clr-7: rgba(0, 0, 0, .1);
     --bg-clr-8: #656966;
+    --bg-clr-9: #FFFFFF;
+    --bg-clr-10: #F0F3F4;
+    --bg-clr-11: rgba(100, 100, 111, 0.2);
+    --bg-clr-12: rgba(252, 58, 58);
 }
 
 /* Text Colors */

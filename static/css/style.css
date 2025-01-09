@@ -7,7 +7,6 @@
     border-radius: 0;
     font-family: "Montserrat", serif;
     font-optical-sizing: auto;
-    font-size: 16px;
     font-weight: 400;
     font-style: normal;
     line-height: 1.2;
@@ -21,6 +20,12 @@
 	-webkit-tap-highlight-color: transparent;
     z-index: 1;
     list-style-type: none;
+    caret-color: var(--bg-clr-6);
+}
+
+*::selection {
+    background-color: var(--bg-clr-6);
+    color: var(--txt-clr-1);
 }
 
 /* Body */
@@ -43,4 +48,9 @@ img {
     pointer-events: none;
     -webkit-user-select: none;
     user-select: none;
+}
+
+textarea {
+    resize: none;
+    overflow: hidden;
 }

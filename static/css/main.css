@@ -1,5 +1,10 @@
-main {
+.mn-bg {
     background-color: var(--bg-clr-2);
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 main * {
@@ -8,7 +13,7 @@ main * {
 
 main > .sct-bg > .sct {
     padding-top: 32px;
-    scroll-margin-top: 111.59px;
+    scroll-margin-top: -30px;
 }
 
 main > .sct-bg > .sct > .hdr-bg > .hdr {
@@ -72,7 +77,8 @@ main > .sct-bg > .sct > .cntnt-bg > .cntnt {
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl {
     border-radius: 18px;
     align-items: stretch !important;
-    background-color: white;
+    background-color: var(--bg-clr-9);
+    box-shadow: var(--bg-clr-11) 0px 7px 29px 0px;
 }
 
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn {
@@ -84,7 +90,7 @@ main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn >
 }
 
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr .icn {
-    background-color: var(--bg-clr-2);
+    background-color: var(--bg-clr-10);
 }
 
 main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn > .hdr-bg > .hdr > .cntnt-bg > .cntnt > .tlt {
@@ -136,6 +142,10 @@ main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn >
         height: 1px;
         background-color: var(--bg-clr-8);
     }
+
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .txt-inpt-bg > .txt-inpt {
+        height: 85px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -149,4 +159,100 @@ main > .sct-bg > .sct > .cntnt-bg > .cntnt > .tbl-bg > .tbl > .clmn-bg > .clmn >
         height: 89%;
         background-color: var(--bg-clr-8);
     }
+
+
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .txt-inpt-bg > .txt-inpt {
+        height: 125px;
+    }
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg {
+    max-width: 538px;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd {
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: var(--bg-clr-11) 0px 7px 29px 0px;
+    background-color: var(--bg-clr-9);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd {
+    gap: 16px;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .inpt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .txt-inpt-bg {
+    background-color: var(--bg-clr-10);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .inpt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .txt-inpt-bg {
+    border-radius: 8px;
+    padding: 16.5px 14.5px;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn > .txt {
+    color: var(--txt-clr-1);
+    font-weight: 500;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn {
+    background-color: var(--bg-clr-6);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .btn-bg > .btn > .txt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .inpt,
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm > .txt-inpt-bg > .txt-inpt {
+    line-height: 1.3;
+}
+@media only screen and (min-width: 1200px) {
+    main > .sct-bg > .sct#contact > .inf-bg > .inf {
+        padding-left: 252px;
+        padding-right: 252px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) { 
+    main > .sct-bg > .sct#contact > .inf-bg > .inf {
+        padding-left: 152px;
+        padding-right: 152px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+    main > .sct-bg > .sct#contact > .inf-bg > .inf {
+        padding-left: 82px;
+        padding-right: 82px;
+    }
+}
+
+@media only screen and (max-width: 767px) { 
+    main > .sct-bg > .sct#contact > .inf-bg > .inf {
+        padding-left: 21px;
+        padding-right: 21px;
+    }
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.alrt::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--bg-clr-12);
+    z-index: 2;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm.alrt {
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .frm-bg > .frm {
+    transition: border-radius 0.4s ease-in-out;
 }
