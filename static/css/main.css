@@ -418,3 +418,102 @@ main > .sct-bg > .sct > .cntnt-bg > .cntnt > .bd-bg > .bd > .clmn-bg > .clmn > .
     border-bottom-left-radius: 0;
     border-bottom-width: 0;
 }
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst {
+    gap: 18px;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg {
+    aspect-ratio: 18333 / 11125;
+    height: auto;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg > .cmpnt {
+    box-shadow: var(--bg-clr-11) 0px 7px 29px 0px;
+    border-radius: 16px;
+}
+
+@media only screen and (min-width: 1200px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg {
+        width: 388px;
+    }
+
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg:has(.cmpnt.actv) {
+        width: 485px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg {
+        width: 320px;
+    }
+
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg:has(.cmpnt.actv) {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg {
+        width: 280px;
+    }
+
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg:has(.cmpnt.actv) {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg {
+        width: 240px;
+    }
+
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg:has(.cmpnt.actv) {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .fl {
+        display: none;
+    }
+
+    main > .sct-bg > .sct#projects {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg {
+    overflow: hidden;
+    padding: 36px 0;
+    margin: -36px 0;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .fl {
+    z-index: 2;
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .fl.lft-cvr {
+    padding: 0 6px 0 20px;
+    background: linear-gradient(to right, var(--bg-clr-2) 50%, transparent 100%);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .fl.rght-cvr {
+    padding: 0 20px 0 6px;
+    background: linear-gradient(to right, transparent 0%, var(--bg-clr-2) 50%);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .fl.rght-cvr > .btn-bg > .btn {
+    transform: rotate(180deg);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .fl > .btn-bg > .btn {
+    padding: 8px;
+    background-color: white;
+    border: 1px solid var(--bg-clr-6);
+}
+
+main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst {
+    transform: translateX(0);
+}
