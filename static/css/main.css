@@ -75,10 +75,6 @@ main > .sct-bg > .sct {
 }
 
 @media only screen and (max-width: 767px) {
-    .mn-bg::before {
-        clip-path: polygon(0 0, calc(100% - 200px) 0, 100% 250px, 100% 100%, 0 100%);
-    }
-    
     main {
         padding-bottom: 16px;
     }
@@ -88,6 +84,16 @@ main > .sct-bg > .sct {
 
     main > .sct-bg > .sct#home > .cntnt-bg > .cntnt > .rght-bg {
         padding: 0 0 0 50px;
+    }
+
+    main > .sct-bg > .sct#home > .cntnt-bg > .cntnt > .rght-bg {
+        margin: 0 !important;
+        width: 100%;
+        padding: 0 0 36px 0 !important;
+    }
+
+    main > .sct-bg > .sct#home > .cntnt-bg > .cntnt {
+        padding-top: 0 !important;
     }
 }
 
@@ -582,6 +588,14 @@ main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg.crsl-nxt
 
     main > .sct-bg > .sct > .cntnt-bg > .cntnt > .lst-bg > .lst > .cmpnt-bg.crsl-slctd {
         min-width: 340px;
+    }
+
+    main > .sct-bg > .sct#home > .cntnt-bg > .cntnt {
+        flex-direction: column-reverse;
+    }
+
+    main > .sct-bg > .sct#home > .cntnt-bg > .cntnt > .bd-bg {
+        max-width: 100% !important;
     }
 }
 
