@@ -24,6 +24,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    letter-spacing: 0.5px;
 }
 
 *::selection {
@@ -51,6 +52,7 @@ img {
     pointer-events: none;
     -webkit-user-select: none;
     user-select: none;
+    background-color: var(--bg-clr-9);
 }
 
 textarea {

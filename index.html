@@ -46,6 +46,7 @@
     <script src="./static/js/scroll.js"></script>
     <script src="./static/js/contact.js"></script>
     <script src="./static/js/focus.js"></script>
+    <script src="./static/js/carousel.js"></script>
     <script>
         if ('ontouchstart' in document.documentElement) {
             try {
@@ -136,10 +137,46 @@
             </div>
         </nav>
     </div>
-    <div class="mn-bg wdth-cvr">
+    <div class="mn-bg ptn-rltv wdth-cvr">
         <main class="wdth-cvr flx-drt-clmn">
             <div class="sct-bg wdth-cvr flx-cntr">
-                <section class="sct wdth-cvr flx-drt-clmn" id="home"></section>
+                <section class="sct wdth-cvr flx-drt-clmn wrp" id="home">
+                    <div class="cntnt-bg wdth-cvr flx-cntr flx-lft">
+                        <div class="cntnt wdth-cvr flx-cntr flx-lft flx-tp">
+                            <div class="bd-bg wdth-cvr flx-cntr">
+                                <div class="bd wdth-cvr flx-drt-clmn">
+                                    <div class="dtl-bg wdth-cvr flx-cntr">
+                                        <div class="dtl tp wdth-cvr flx-cntr flx-lft">
+                                            <h5 class="txt">T1chCoder</h5>
+                                        </div>
+                                    </div>
+                                    <div class="dtl-bg wdth-cvr flx-cntr">
+                                        <div class="dtl nm wdth-cvr flx-cntr flx-lft">
+                                            <h1 class="txt">Asadbek Jumabaev</h1>
+                                        </div>
+                                    </div>
+                                    <div class="dtl-bg wdth-cvr flx-cntr">
+                                        <div class="dtl inf-brf wdth-cvr flx-cntr flx-lft">
+                                            <h5 class="txt">Full-stack developer dedicated to building dynamic and efficient web solutions.</h5>
+                                        </div>
+                                    </div>
+                                    <div class="dtl-bg wdth-cvr flx-cntr">
+                                        <div class="dtl inf wdth-cvr flx-cntr flx-lft">
+                                            <h5 class="txt">A dedicated technology enthusiast with a strong passion for web development and creating impactful digital solutions. Experienced in building dynamic projects, exploring innovative approaches, and constantly striving to grow within the ever-evolving IT industry.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rght-bg flx-cvr flx-cntr">
+                                <div class="rght pdng-tp-cvr ptn-rltv wdth-cvr flx-cntr">
+                                    <div class="pstr ptn-abslt tp-cvr lft-cvr cvr flx-cntr">
+                                        <img src="./static/images/profile.png" class="img" alt="profile">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
             <div class="sct-bg wdth-cvr flx-cntr">
                 <section class="sct wdth-cvr flx-drt-clmn wrp" id="about">
@@ -163,7 +200,10 @@
                                                 <div class="hdr wdth-cvr flx-drt-clmn">
                                                     <div class="icn-bg flx-cntr">
                                                         <span style="--fgr-sz: 72px;" class="icn fgr bdr-rds-cvr">
-    
+                                                            <svg width="73" height="72" viewBox="0 0 73 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <rect x="0.666687" width="72" height="72" rx="36"/>
+                                                                <path d="M21.0867 18.8601V44.4601H28.7667V54.7001H56.9267V34.2201H41.5667V18.8601H21.0867ZM23.6467 21.4201H39.0067V34.2201H28.7667V41.9001H23.6467V21.4201ZM31.3267 36.7801H54.3667V52.1401H31.3267V36.7801Z" fill="black"/>
+                                                            </svg>                                                                                                                                
                                                         </span>
                                                     </div>
                                                     <div class="cntnt-bg wdth-cvr flx-cntr">
@@ -253,7 +293,10 @@
                                                 <div class="hdr wdth-cvr flx-drt-clmn">
                                                     <div class="icn-bg flx-cntr">
                                                         <span style="--fgr-sz: 72px;" class="icn fgr bdr-rds-cvr">
-    
+                                                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M20.9998 15.875C18.1694 15.875 15.8748 18.1695 15.8748 21C15.8748 23.8305 18.1694 26.125 20.9998 26.125C23.8303 26.125 26.1248 23.8305 26.1248 21C26.1248 18.1695 23.8303 15.875 20.9998 15.875ZM18.4373 21C18.4373 19.5848 19.5846 18.4375 20.9998 18.4375C22.415 18.4375 23.5623 19.5848 23.5623 21C23.5623 22.4152 22.415 23.5625 20.9998 23.5625C19.5846 23.5625 18.4373 22.4152 18.4373 21Z" fill="#212121"/>
+                                                                <path d="M27.7086 11.7706C26.7221 11.9498 25.7763 11.2986 25.5964 10.3162L24.9308 6.68822C24.8647 6.3277 24.5865 6.0426 24.2265 5.96634C23.1735 5.7433 22.0938 5.62988 21 5.62988C19.9055 5.62988 18.8252 5.74345 17.7716 5.96675C17.4115 6.04309 17.1333 6.32834 17.0673 6.68902L16.4036 10.3163C16.386 10.4128 16.3604 10.5078 16.3272 10.6002C15.9897 11.5406 14.9505 12.0306 14.006 11.6945L10.5223 10.4543C10.1761 10.331 9.78935 10.4278 9.54283 10.6995C8.08513 12.3061 6.98036 14.2018 6.3097 16.267C6.19657 16.6154 6.30565 16.9974 6.58599 17.2344L9.40966 19.6214C9.48479 19.6849 9.55465 19.7545 9.61848 19.8293C10.2677 20.5906 10.1742 21.7317 9.40964 22.3781L6.58599 24.7651C6.30565 25.0021 6.19657 25.384 6.3097 25.7324C6.98036 27.7977 8.08513 29.6934 9.54283 31.3001C9.78935 31.5717 10.1761 31.6686 10.5223 31.5453L14.0061 30.3048C14.0989 30.272 14.1943 30.2464 14.2913 30.2287C15.278 30.0496 16.2237 30.7007 16.4036 31.6832L17.0673 35.3104C17.1333 35.6712 17.4115 35.9564 17.7716 36.0328C18.8252 36.256 19.9055 36.3695 21 36.3695C22.0938 36.3695 23.1735 36.2562 24.2265 36.033C24.5865 35.9569 24.8647 35.6717 24.9308 35.3112L25.5963 31.6835C25.614 31.5866 25.6396 31.4918 25.6728 31.3993C26.0103 30.4588 27.0496 29.9689 27.9941 30.3048L31.4776 31.5453C31.824 31.6686 32.2107 31.5717 32.4572 31.3001C33.915 29.6934 35.0197 27.7977 35.6903 25.7324C35.8036 25.384 35.6944 25.0021 35.4141 24.7651L32.5904 22.378C32.5151 22.3145 32.4454 22.245 32.3816 22.1701C31.7323 21.4089 31.8258 20.2678 32.5904 19.6214L35.4141 17.2344C35.6944 16.9974 35.8036 16.6154 35.6903 16.267C35.0197 14.2018 33.915 12.3061 32.4572 10.6995C32.2107 10.4278 31.824 10.331 31.4776 10.4543L27.9938 11.6946C27.9011 11.7275 27.8057 11.753 27.7086 11.7706ZM10.7465 13.2541L13.1465 14.1086C15.4142 14.9155 17.9217 13.7433 18.7391 11.4658C18.8194 11.2421 18.8814 11.0115 18.9243 10.7775L19.3789 8.29278C19.9127 8.22613 20.4538 8.19238 21 8.19238C21.5458 8.19238 22.0864 8.22608 22.6199 8.29263L23.0759 10.7785C23.5126 13.1607 25.7987 14.7218 28.1665 14.2919C28.3997 14.2495 28.6298 14.1881 28.8533 14.1086L31.2536 13.2541C31.907 14.1089 32.4503 15.0415 32.8692 16.0303L30.9358 17.6645C29.0888 19.2263 28.8605 21.9903 30.4318 23.8329C30.5858 24.0136 30.7547 24.1816 30.9361 24.335L32.8692 25.9692C32.4503 26.958 31.907 27.8904 31.2536 28.7453L28.853 27.8907C26.5855 27.0838 24.0783 28.2561 23.2609 30.5337C23.1806 30.7574 23.1186 30.988 23.0757 31.222L22.6199 33.7068C22.0864 33.7734 21.5458 33.807 21 33.807C20.4538 33.807 19.9127 33.7734 19.3789 33.7066L18.9242 31.2217C18.4879 28.8391 16.2015 27.2775 13.8335 27.7075C13.6002 27.75 13.3702 27.8113 13.1467 27.891L10.7465 28.7453C10.0929 27.8904 9.54975 26.958 9.13086 25.9692L11.0641 24.3349C12.9113 22.7732 13.1396 20.0092 11.5683 18.1666C11.4141 17.9858 11.2454 17.8178 11.064 17.6645L9.13086 16.0303C9.54975 15.0415 10.0929 14.1089 10.7465 13.2541Z" fill="#212121"/>
+                                                            </svg>                                                                
                                                         </span>
                                                     </div>
                                                     <div class="cntnt-bg wdth-cvr flx-cntr">
@@ -333,7 +376,16 @@
                                                 <div class="hdr wdth-cvr flx-drt-clmn">
                                                     <div class="icn-bg flx-cntr">
                                                         <span style="--fgr-sz: 72px;" class="icn fgr bdr-rds-cvr">
-    
+                                                            <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <g clip-path="url(#clip0_441_30)">
+                                                                <path d="M1.12026 25.2045C0.730337 25.5972 0.464707 26.0979 0.357023 26.6431C0.249339 27.1883 0.304447 27.7535 0.515365 28.2671C0.726283 28.7807 1.08352 29.2195 1.54181 29.528C2.00009 29.8365 2.53881 30.0008 3.08969 30C3.45547 30.0007 3.81777 29.9284 4.15576 29.7872C4.49375 29.6461 4.80076 29.4389 5.05912 29.1776L14.2009 19.9519L10.2621 15.9788L1.12026 25.2045ZM23.9683 8.10553L27.9461 6.0281L30.0325 1.96129L28.0891 0L24.0592 2.10553L22.0007 6.11989L17.1523 11.0128L19.1199 12.9984L23.9683 8.10553ZM24.8389 18.7699C24.7126 18.7624 24.592 18.7324 24.4639 18.7324C23.7845 18.7324 23.1404 18.8729 22.539 19.0977L11.1085 7.56229C11.3312 6.95536 11.4705 6.30534 11.4705 5.61973C11.4705 5.49048 11.4408 5.36872 11.4333 5.24134C11.2366 2.3172 8.8495 0 5.90184 0C5.04427 0 4.24054 0.211677 3.51476 0.561973L7.21418 4.29535C7.40908 4.49204 7.54273 4.72432 7.63183 4.96972C7.87499 5.63472 7.7432 6.40837 7.21418 6.94412C6.85222 7.3094 6.37703 7.49298 5.90184 7.49298C5.68281 7.49298 5.46563 7.44427 5.25774 7.36559C5.00747 7.27541 4.7795 7.13163 4.5895 6.94412L0.890086 3.21074C0.527594 3.96136 0.337265 4.78473 0.333224 5.61973C0.333224 8.59444 2.62935 11.0034 5.52689 11.202C5.65311 11.2095 5.77376 11.2395 5.90184 11.2395C6.58121 11.2395 7.22532 11.099 7.82673 10.8742L19.2572 22.4096C19.0229 23.0302 18.9003 23.6881 18.8953 24.3522C18.8953 24.4814 18.925 24.6032 18.9324 24.7306C19.1292 27.6547 21.5162 29.9719 24.4639 29.9719C25.3215 29.9719 26.1252 29.7602 26.851 29.4099L23.1516 25.6766C22.9651 25.4853 22.8226 25.2551 22.7339 25.0022C22.609 24.6673 22.5819 24.3032 22.6559 23.9532C22.73 23.6032 22.902 23.282 23.1516 23.0278C23.5135 22.6625 23.9887 22.4789 24.4639 22.4789C24.6829 22.4789 24.9001 22.5276 25.108 22.6063C25.3512 22.6981 25.5813 22.8311 25.7762 23.0278L29.4757 26.7612C29.8228 26.0287 30.0325 25.2176 30.0325 24.3522C30.0325 21.3775 27.7364 18.9685 24.8389 18.7699Z" fill="black"/>
+                                                                </g>
+                                                                <defs>
+                                                                <clipPath id="clip0_441_30">
+                                                                <rect width="30" height="30" fill="white" transform="translate(0.333252)"/>
+                                                                </clipPath>
+                                                                </defs>
+                                                            </svg>                                                                
                                                         </span>
                                                     </div>
                                                     <div class="cntnt-bg wdth-cvr flx-cntr">
@@ -423,7 +475,7 @@
                             <div class="lst-bg ptn-rltv wdth-cvr flx-cntr">
                                 <div class="fl ptn-abslt tp-cvr lft-cvr hght-cvr flx-cntr">
                                     <div class="btn-bg flx-cntr">
-                                        <button type="button" class="btn flx-cntr bdr-rds-cvr">
+                                        <button type="button" class="btn flx-cntr bdr-rds-cvr" id="prjct-btn-lft">
                                             <span style="--fgr-sz: 24px;" class="icn fgr">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8106 20.4983C16.0857 20.1887 16.0579 19.7146 15.7483 19.4394L7.8789 12L15.7483 4.56056C16.0579 4.28537 16.0857 3.81132 15.8106 3.50173C15.5354 3.19214 15.0613 3.16426 14.7517 3.43945L6.25173 11.4394C6.09161 11.5818 6 11.7858 6 12C6 12.2142 6.09161 12.4182 6.25173 12.5605L14.7517 20.5605C15.0613 20.8357 15.5354 20.8079 15.8106 20.4983Z" fill="var(--bg-clr-6)"/>
@@ -432,26 +484,26 @@
                                         </button>
                                     </div>
                                 </div>
-                                <div class="lst flx-cntr">
-                                    <div class="cmpnt-bg flx-cntr">
-                                        <a href="https://github.com/T1chCoder/MovieVibe" target="_blank" class="cmpnt cvr ovrfl-hdn flx-cntr">
+                                <div class="lst flx-cntr wdth-cvr" id="prjct-bd">
+                                    <div class="cmpnt-bg flx-cntr crsl-prvs">
+                                        <a href="https://github.com/T1chCoder/MovieVibe" target="_blank" class="cmpnt hvr-5 actv-4 cvr ovrfl-hdn flx-cntr">
                                             <img src="./static/images/projects/MovieVibe.png" alt="project">
                                         </a>
                                     </div>
-                                    <div class="cmpnt-bg flx-cntr">
-                                        <a href="https://github.com/T1chCoder/ShopSmart" target="_blank" class="cmpnt cvr ovrfl-hdn flx-cntr actv">
+                                    <div class="cmpnt-bg flx-cntr crsl-slctd">
+                                        <a href="https://github.com/T1chCoder/ShopSmart" target="_blank" class="cmpnt hvr-5 actv-4 cvr ovrfl-hdn flx-cntr">
                                             <img src="./static/images/projects/ShopSmart.png" alt="project">
                                         </a>
                                     </div>
-                                    <div class="cmpnt-bg flx-cntr">
-                                        <a href="https://github.com/T1chCoder/CinemaBot" target="_blank" class="cmpnt cvr ovrfl-hdn flx-cntr">
+                                    <div class="cmpnt-bg flx-cntr crsl-nxt">
+                                        <a href="https://github.com/T1chCoder/CinemaBot" target="_blank" class="cmpnt hvr-5 actv-4 cvr ovrfl-hdn flx-cntr">
                                             <img src="./static/images/projects/CinemaBot.png" alt="project">
                                         </a>
                                     </div>
                                 </div>
                                 <div class="fl ptn-abslt tp-cvr rght-cvr hght-cvr flx-cntr">
                                     <div class="btn-bg flx-cntr">
-                                        <button type="button" class="btn flx-cntr bdr-rds-cvr">
+                                        <button type="button" class="btn flx-cntr bdr-rds-cvr" id="prjct-btn-rght">
                                             <span style="--fgr-sz: 24px;" class="icn fgr">
                                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15.8106 20.4983C16.0857 20.1887 16.0579 19.7146 15.7483 19.4394L7.8789 12L15.7483 4.56056C16.0579 4.28537 16.0857 3.81132 15.8106 3.50173C15.5354 3.19214 15.0613 3.16426 14.7517 3.43945L6.25173 11.4394C6.09161 11.5818 6 11.7858 6 12C6 12.2142 6.09161 12.4182 6.25173 12.5605L14.7517 20.5605C15.0613 20.8357 15.5354 20.8079 15.8106 20.4983Z" fill="var(--bg-clr-6)"/>
